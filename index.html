@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coffee</title>
+        <link rel="shortcut icon" type="image/png" href="./Asset/specialty1.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./Css/Homepage.css">
+        <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+        <script src="./Javascript/Homepage.js"></script>
+    </head>
+    <body onscroll="scroll()">
+        <div class="loader" id="loader">
+            <img src="./Asset/loadcoffee.gif">
+        </div>
+        <header class="nav-bar" id="nav">
+            <div class="logo">
+                <img id="img">
+                <h3 id="logo">Coffee.</h3>
+            </div>
+            <ul class="menu">
+                <li class="lmenu"><a class="lmenu" href="#home">Home&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+                <li class="lmenu"><a class="lmenu" href="#produ">Products&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+                <li class="lmenu"><a class="lmenu" href="#prem">Premium&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+                <li class="lmenu"><a class="lmenu" href="#blog">Blog&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+                <li class="lmenu" id="menu"><i class="material-icons" onclick="call_menu()">menu</i></li>
+            </ul>
+            
+        </header>
+        <div id="call_menu" class="call_menu">
+            <ul class="list">
+                <li id="menu" onclick="close_menu()"><i class="material-icons" >close</i>Close</li>
+                <a href="#home"><li>Home</li></a>
+                <li><a href="#produ">Products</a></li>
+                <li><a>Premium</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </div>
+        <div class="main" id="main">
+            <div class="left-background" id="home">
+                <h1>Choose Your Favorite Coffee And Enjoy<span>.</span></h1>
+                <p id="descp">Buy the best and delicious coffees.</p>
+                <hr>
+                <div class="container">
+                    <div class="card">
+                        <h2>120K</h2>
+                        <h3>Testimonials</h3>
+                        <h5>Testimonials from various customers who trust us.</h5>
+                    </div>
+                    <div class="card">
+                        <h2>340+</h2>
+                        <h3>Exclusive Product</h3>
+                        <h5>Premium preparation with quality ingredients.</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="img-container">
+                <a href="#home"><button class="top" id="top"><i class="large material-icons">arrow_upward</i></button></a>
+                <a href="#special"><img src="./Asset/scroll.png" id="scroll" class="scroll"></a>
+            </div>
+            
+        </div>
+
+        <div class="specialist" id="special">
+            <div class="textfield">
+                <div id="tdd">
+                <span>|&nbsp;&nbsp;</span>
+                <h1>Specialty coffees that make you happy and cheer you up!</h1>
+                </div>
+                <form  method="get" style="margin-right:50px">
+                    <input type="submit" value="SEE MORE">
+                </form>
+                
+            </div>
+            <div class="card-holder">
+                <div class="piece">
+                    <img src="./Asset/specialty1.png">
+                    <h2>Selected Coffee</h2>
+                    <h3>We select the best premium coffee, for a true taste.</h3>
+                </div>
+                <div class="vl"></div>
+                <div class="piece">
+                    <img src="./Asset/specialty2.png">
+                    <h2>Delicious Cookies</h2>
+                    <h3>Enjoy your coffee with some hot cookies.</h3>
+                </div>
+                <div class="vl"></div>
+                <div class="piece">
+                    <img src="./Asset/specialty3.png">
+                    <h2>Enjoy at home</h2>
+                    <h3>Enjoy the best coffee in comfort of your home.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="product" id="produ">
+            <div class="textfield"  id="product-textfield">
+                <div id="tdd">
+                <span>|&nbsp;&nbsp;</span>
+                <h1>Choose our delicious and best products</h1>
+                </div>
+            </div>
+            <div class="card-holder-p">
+                <div class="piece-p" id="delicacies" onclick="toggleDelicasies()">
+                    
+                    <h2 id="active-d">New Delicacies</h2>
+                    <h3 >3 product.</h3>
+                </div>
+                <div class="vl-p"></div>
+                <div class="piece-p" id="coffee" onclick="toggleCoffee()">
+                   
+                    <h2 id="active-co">Hot Coffee</h2>
+                    <h3>4 product.</h3>
+                </div>
+                <div class="vl-p"></div>
+                <div class="piece-p" id="cake" onclick="toggleCakes()"> 
+
+                    <h2 id="active-c">Cakes and Delicacies</h2>
+                    <h3>4 product.</h3>
+                </div>
+            </div>
+            <div class="product-div" id="delicase-div">
+                <div class="p-details">
+
+                    <div style="width: 32vh; height: 32vh;">
+                        <img src="./Asset/delicacies1.png"id="prod-img">
+                    </div>
+                    
+                    <div style="background-color: rgb(255, 255, 255); height: 15.2vh;">
+                        <h1>$5</h1>
+                        <h5>Cookies</h5>
+                        <div class="shop">
+                            <i class="material-icons" style="color:white;">local_grocery_store</i>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="p-details">
+
+                    <div style="width: 32vh; height: 32vh;">
+                        <img src="./Asset/delicacies2.png" id="prod-img">
+                    </div>
+                    <div style="background-color: rgb(255, 255, 255); height: 15.2vh;">
+                        <h1>$6</h1>
+                        <h5>Croissant</h5>
+                        <div class="shop">
+                            <i class="material-icons" style="color:white;">local_grocery_store</i>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="p-details">
+    
+                    <div style="width: 32vh; height: 32vh;">
+                        <img src="./Asset/delicacies3.png" id="prod-img">
+                    </div>
+                    <div style="background-color: rgb(255, 255, 255); height: 15.2vh;">
+                        <h1>$8</h1>
+                        <h5>Baggle</h5>
+                        <div class="shop">
+                            <i class="material-icons" style="color:white;">local_grocery_store</i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="product-div" id="coffe-div">
+                <div class="p-details">
+                    
+                    <div style="width: 32vh; height: 32vh;">
+                        <img src="./Asset/coffee1.png" id="prod-img">
+                    </div>
+                    <div style="background-color: rgb(255, 255, 255); height: 15.2vh;">
+                        <h1>$7</h1>
+                        <h5>Black Coffee</h5>
+                        <div class="shop">
+                            <i class="material-icons" style="color:white;">local_grocery_store</i>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="p-details">
+
+                   
+                    <div style="width: 32vh; height: 32vh;">
+                        <img src="./Asset/coffee2.png" id="prod-img">
+                    </div>
+                    <div style="background-color: rgb(255, 255, 255); height: 15.2vh;">
+                        <h1>$12</h1>
+                        <h5>Pure Coffee</h5>
+                        <div class="shop">
+                            <i class="material-icons" style="color:white;">local_grocery_store</i>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="p-details">
+
+                   
+                    <div style="width: 32vh; height: 32vh;">
+                        <img src="./Asset/coffee3.png" id="prod-img">
+                    </div>
+                    <div style="background-color: rgb(255, 255, 255); height: 15.2vh;">
+                        <h1>$9</h1>
+                        <h5>Milk Coffee</h5>
+                        <div class="shop">
+                            <i class="material-icons" style="color:white;">local_grocery_store</i>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="p-details">
+
+                   
+                    <div style="width: 32vh; height: 32vh;">
+                        <img src="./Asset/coffee4.png" id="prod-img">
+                    </div>
+                    <div style="background-color: rgb(255, 255, 255); height: 15.2vh;">
+                        <h1>$9</h1>
+                        <h5>Mocka Coffee</h5>
+                        <div class="shop">
+                            <i class="material-icons" style="color:white;">local_grocery_store</i>
+                        </div>
+                    </div>
+                    
+                </div>
+
+               
+            </div>
+            <div class="product-div" id="cake-div">
+                <div class="p-details">
+                   
+                    <div style="width: 32vh; height: 32vh;">
+                        <img src="./Asset/cake1.png" id="prod-img">
+                    </div>
+                    <div style="background-color: rgb(255, 255, 255); height: 15.2vh;">
+                        <h1>$6</h1>
+                        <h5>Cream Cake</h5>
+                        <div class="shop">
+                            <i class="material-icons" style="color:white;">local_grocery_store</i>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="p-details">
+
+                    <div style="width: 32vh; height: 32vh;">
+                        <img src="./Asset/cake2.png" id="prod-img">
+                    </div>
+                    <div style="background-color: rgb(255, 255, 255); height: 15.2vh;">
+                        <h1>$5</h1>
+                        <h5>Choco Croissant</h5>
+                        <div class="shop">
+                            <i class="material-icons" style="color:white;">local_grocery_store</i>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="p-details">
+
+                    <div style="width: 32vh; height: 32vh;">
+                        <img src="./Asset/cake3.png" id="prod-img">
+                    </div>
+                    <div style="background-color: rgb(255, 255, 255); height: 15.2vh;">
+                        <h1>$15</h1>
+                        <h5>Pancake</h5>
+                        <div class="shop">
+                            <i class="material-icons" style="color:white;">local_grocery_store</i>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="p-details">
+
+                    <div style="width: 32vh; height: 32vh;">
+                        <img src="./Asset/cake4.png" id="prod-img">
+                    </div>
+                    <div style="background-color: rgb(255, 255, 255); height: 15.2vh;">
+                        <h1>$12</h1>
+                        <h5>Milk Cake</h5>
+                        <div class="shop">
+                            <i class="material-icons" style="color:white;">local_grocery_store</i>
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>
+        </div>
+
+        <div class="premium" id="prem" style="margin-top: 30px;">
+            <div class="textfield" >
+                <div style="display: flex; margin-left: 40px;">
+                <span>|&nbsp;&nbsp;</span>
+                <h1>We offer premium and better quality preperation just for you!</h1>
+                </div>
+            </div>
+
+            <div class="container-wrapper">
+                <img id="img-float" src="./Asset/quality2.png">
+                <div class="coffee-img">
+                    
+                </div>
+                <div class="detail-wrapper">
+                    <h1>Premium Coffee</h1>
+                    <h3>$94.45</h3>
+                    <p id="price"> Especial Price</p>
+                    <p id="discription">We are delighted with our coffee. Thats why get the best premium cofee plus the kettle made of resistant materials that you see in the image,for a special price.</p>
+                    <div class="button-container">
+                        <input type="button" id="buy" value="BUY NOW">
+                        <button id="see"><p id="psee">SEE MORE</p><i class="material-icons" id="arrow">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="margin-left: 40px; margin-right: 40px;">
+        <div class="link" id="link">
+            <img src="./Asset/logocoffee1.png">
+            <img src="./Asset/logocoffee2.png">
+            <img src="./Asset/logocoffee3.png">
+            <img src="./Asset/logocoffee4.png">
+        </div>
+        <div class="blog" id="blog">
+            <div class="textfield">
+                <div style="display: flex; margin-left: 40px;">
+                <span>|&nbsp;&nbsp;</span>
+                <h1>Our Blogs Coffee with trending topic for this week</h1>
+                </div>
+            </div>
+
+            <div class="blog-holder">
+                <div class="blog-card">
+                    <div class="blog-img" style="background: url(./Asset/blog1.png) center;">
+                        <button><i class="material-icons">call_made</i></button>
+                    </div>
+                    <div class="content">
+                        <h1>10 Coffee Recommendation</h1>
+                        <p>The blogs about coffee will help you a lot about how it is prepared, its waiting time, for a good quality coffee</p>
+                    </div>
+                    <div class="comment">
+                        
+                        <p><i class="material-icons" id="clogo">chat_bubble_outline</i>12</p>
+                        <p><i class="material-icons" id="clogos">visibility</i>76.5K</p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img" style="background: url(./Asset/blog2.png) center;">
+                        <button><i class="material-icons">call_made</i></button>
+                    </div>
+                    <div class="content">
+                        <h1>12 Benefits of Drinking Coffee</h1>
+                        <p>The blogs about coffee will help you a lot about how it is prepared, its waiting time, for a good quality coffee</p>
+                    </div>
+                    <div class="comment">
+                        
+                        <p><i class="material-icons" id="clogo">chat_bubble_outline</i>45</p>
+                        <p><i class="material-icons" id="clogos">visibility</i>356.5K</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <footer class="footer" id="footer">
+            <h1 id="lofo-f">Coffee.</h1>
+            <div id="container-box">
+                <div id="contact">
+                    <p>Subscribe to our newsletter</p>
+                    <div id="box">
+                        <input type="email" placeholder="Your email address">
+                        <button id="subscribe"><i class="material-icons">call_made</i></button>
+                    </div>
+                </div>
+
+                <div class="info-c">
+                    <h1>Address</h1>
+                    <p>9876 Hacienda Av.</p>
+                    <p>Borivali, La Liberal 123, India</p>
+                </div>
+                <div class="info-c">
+                    <h1>Contact</h1>
+                    <p>+917387340230</p>
+                    <p>coffee@email.com</p>
+                </div>
+                <div class="info-c">
+                    <h1>Office</h1>
+                    <p>Monday - Sunday</p>
+                    <p>9AM - 10AM</p>
+                </div>
+
+            </div>
+            <div class="line"></div>
+            <div class="bottom-wrapper">
+                <div class="s-icon">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-github"></a>
+                </div>
+                <div id="copyright">
+                    <p>&copy;Coffee,All righht reserved</p>
+                </div>
+            </div>
+
+        </footer>
+
+        
+    </body>
+</html>

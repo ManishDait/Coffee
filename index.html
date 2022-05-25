@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Coffee</title>
-        <link rel="shortcut icon" type="image/png" href="./Asset/specialty1.png">
+        <link rel="shortcut icon" type="image/png" href="./Asset/dark_logo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -26,18 +26,21 @@
                 <li class="lmenu"><a class="lmenu" href="#prem">Premium&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
                 <li class="lmenu"><a class="lmenu" href="#blog">Blog&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
                 <li class="lmenu" id="menu"><i class="material-icons" onclick="call_menu()">menu</i></li>
+                
             </ul>
             
         </header>
-        <div id="call_menu" class="call_menu">
-            <ul class="list">
-                <li id="menu" onclick="close_menu()"><i class="material-icons" >close</i>Close</li>
-                <a href="#home"><li>Home</li></a>
-                <li><a href="#produ">Products</a></li>
-                <li><a>Premium</a></li>
-                <li><a>Blog</a></li>
-            </ul>
-        </div>
+        
+            <div id="call_menu" class="call_menu">
+                <ul class="list">
+                    <li id="menu-x" onclick="close_menu()"><i class="material-icons" >close</i></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produ">Products</a></li>
+                    <li><a href="#prem">Premium</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+       
         <div class="main" id="main">
             <div class="left-background" id="home">
                 <h1>Choose Your Favorite Coffee And Enjoy<span>.</span></h1>
@@ -112,7 +115,7 @@
                 <div class="piece-p" id="coffee" onclick="toggleCoffee()">
                    
                     <h2 id="active-co">Hot Coffee</h2>
-                    <h3>4 product.</h3>
+                    <h3 >4 product.</h3>
                 </div>
                 <div class="vl-p"></div>
                 <div class="piece-p" id="cake" onclick="toggleCakes()"> 
@@ -343,7 +346,7 @@
             <div class="blog-holder">
                 <div class="blog-card">
                     <div class="blog-img" style="background: url(./Asset/blog1.png) center;">
-                        <button><i class="material-icons">call_made</i></button>
+                        <button><i id="blog-arrow"class="material-icons">call_made</i></button>
                     </div>
                     <div class="content">
                         <h1>10 Coffee Recommendation</h1>
@@ -358,7 +361,7 @@
 
                 <div class="blog-card">
                     <div class="blog-img" style="background: url(./Asset/blog2.png) center;">
-                        <button><i class="material-icons">call_made</i></button>
+                        <button><i id="blog-arrow" class="material-icons">call_made</i></button>
                     </div>
                     <div class="content">
                         <h1>12 Benefits of Drinking Coffee</h1>
@@ -382,7 +385,7 @@
                     <p>Subscribe to our newsletter</p>
                     <div id="box">
                         <input type="email" placeholder="Your email address">
-                        <button id="subscribe"><i class="material-icons">call_made</i></button>
+                        <button id="subscribe"><i id="s-arrow"class="material-icons">call_made</i></button>
                     </div>
                 </div>
 
@@ -406,10 +409,10 @@
             <div class="line"></div>
             <div class="bottom-wrapper">
                 <div class="s-icon">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-github"></a>
+                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                    <a href="https://www.github.com" class="fa fa-github"></a>
                 </div>
                 <div id="copyright">
                     <p>&copy;Coffee,All righht reserved</p>

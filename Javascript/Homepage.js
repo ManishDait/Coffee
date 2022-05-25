@@ -17,10 +17,10 @@ window.onload= async function(){
 
 function call_menu(){
         document.getElementById('call_menu').style.display="flex";
+
     
 }
 function close_menu(){
-
         document.getElementById('call_menu').style.display="none";
 }
 
@@ -38,7 +38,7 @@ function scroll(){
         else{
             document.getElementById('scroll').style.position="absolute"
         }
-        document.getElementById('img').style.content="url(./Asset/specialty1.png)"
+        document.getElementById('img').style.content="url(./Asset/dark_logo.png)"
         var list = document.getElementsByClassName('lmenu')
         for (let i = 0; i < list.length; i++) {
             list[i].style.color = "black";

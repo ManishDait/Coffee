@@ -70,6 +70,7 @@ html::-webkit-scrollbar-thumb
     content: url(../Asset/logo.png);
     width: 1.5vw;
     height: 3.5vh;
+    filter: grayscale(100%);
 }
 .menu{
     list-style-type: none;
@@ -156,6 +157,7 @@ html::-webkit-scrollbar-thumb
 .scroll{
     width: 15vw;
     height: 28vh;
+    z-index: 2;
     cursor: pointer;
     position: absolute;
     top: 30%;
@@ -171,6 +173,7 @@ html::-webkit-scrollbar-thumb
     background-color: rgb(221, 221, 221);
     cursor: pointer;
     position: fixed;
+    z-index: 2;
     top: 92%;
     left: 95%;
     display: none;
@@ -184,22 +187,34 @@ html::-webkit-scrollbar-thumb
     width: 50vw;
 }
 
+
+
 .call_menu{
     position: fixed;
     display: none;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(15, 15, 15, 0.589);
+    z-index: 3;
+    background-color: rgba(48, 48, 48, 0.596);
 }
 .list{
     list-style-type: none;
 }
 .list li{
-    font-size: 10vw;
+    align-items: center;
+    text-align: center;
     margin-top: 30px;
     font-weight: bolder;
+}
+#menu-x{
+    color: rgb(255, 153, 0);
+}
+.list li a{
+    font-size: 7vw;
+    color: rgb(255, 153, 0);
+    text-decoration: none;
 }
 
 .specialist{
@@ -226,11 +241,12 @@ html::-webkit-scrollbar-thumb
     
     font-size: 3.4vw;
     padding-bottom: 60px;
-    color: rgb(255, 153, 0);;
+    color: rgb(255, 153, 0);
 }
 .textfield input{
     width: 17vw;
     border: none;
+    z-index: 2;
     outline: none;
     background-color: black;
     color: white;
@@ -309,6 +325,7 @@ html::-webkit-scrollbar-thumb
     width: 17vw;
     height: 10vh;
     margin-left: 50px;
+    z-index: 2;
     display: flex;
     flex-direction: column;
 }
@@ -343,6 +360,7 @@ html::-webkit-scrollbar-thumb
     flex-direction: column;
     width: 32vh;
     height: 42.5vh;
+    z-index: 2;
     overflow: hidden;
     margin-left: 40px;
     border-radius: 12px;
@@ -364,6 +382,7 @@ html::-webkit-scrollbar-thumb
     position: relative;
     bottom: 82%;
     left: 72%;
+    z-index: 2;
     cursor: pointer;
 }
 
@@ -460,6 +479,7 @@ color: gray;
     color: white;
     cursor: pointer;
     height: 7.5vh;
+    z-index: 2;
     margin: 20px;
     font-size: 1.2vw;
 }
@@ -469,6 +489,7 @@ color: gray;
     outline: none;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    z-index: 2;
     text-align: center;
     align-items: center;
     height: 7.5vh;
@@ -505,6 +526,7 @@ color: gray;
     width: 20vw;
     height: 38vh;
     margin: 20px;
+    z-index: 2;
     filter: grayscale(100%);
 }
 .link img:hover{
@@ -545,6 +567,7 @@ color: gray;
     border: none;
     outline: none;
     cursor: pointer;
+    z-index: 2;
     border-top-left-radius: 10px;
     width: 5vw;
     height: 9vh;
@@ -554,7 +577,7 @@ color: gray;
     display: flex;
     flex-direction: column;
 }
-.content h1{
+.content h1{ 
     font-size: 2.5vw;
 }
 .content p{
@@ -575,9 +598,11 @@ color: gray;
     align-items: center;
 }
 #clogo{
+    z-index: 2;
     margin-right: 10px;
 }
 #clogos{
+    z-index: 2;
     margin-right: 10px;
     margin-left: 20px;
 }
@@ -613,6 +638,7 @@ color: gray;
 #box{
     margin-top: 6px;
     display: flex;
+    z-index: 2;
 }
 
 #box input{
@@ -661,6 +687,7 @@ color: gray;
 }
 .bottom-wrapper{
     margin-top: 40px;
+    z-index: 2;
     display: flex;
     width: 80vw;
     margin-left: 90px;
@@ -680,6 +707,7 @@ color: gray;
 }
 .s-icon a{
     color: white;
+    z-index: 2;
     margin: 0px 40px 0px 0px;
     text-decoration: none;
     font-size: 2.2vw;
@@ -704,13 +732,13 @@ color: gray;
     }
     .left-background{
         width: 100vw;
-        height: 120vh;
+        height: 100vh;
     }
     .left-background h1{
         margin-top: 10px;
     }
     .logo h3{
-        font-size: 7vw;
+        font-size: 6vw;
     }
     .logo img{
         width: 5vw;
@@ -726,12 +754,12 @@ color: gray;
         font-size: 10vw;
     } 
     .left-background h1{
-        font-size: 14vw;
+        font-size: 12vw;
         width: 70vw;
     }
     .left-background #descp{
         width: auto;
-        font-size: 5.4vw;
+        font-size: 4vw;
     }
     .left-background hr{
         width: 80vw;
@@ -740,13 +768,13 @@ color: gray;
         width: 35vw;
     }
     .card h2{
-        font-size: 10vw;
+        font-size: 8vw;
     }
     .card h3{
-        font-size: 5vw;
+        font-size: 4vw;
     }
     .card h5{
-        font-size: 4vw;
+        font-size: 3vw;
     }
     .img-container{
         display: flex;
@@ -758,19 +786,19 @@ color: gray;
     .scroll{
         width: 75vw;
         height: 38vh;
-        top: 130%;
+        top: 150%;
         left: 14%;
         position: fixed;
     }
     .textfield{
-        margin-top: 20px;
+        margin-top: 50px;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
     }
     .textfield h1{
         margin-left: 0px;
-        font-size: 8vw;
+        font-size: 6vw;
         width: 80vw;
     }
     #tdd{
@@ -786,7 +814,7 @@ color: gray;
         background-color: black;
         margin-top: 20px;
         margin-bottom: 30px;
-        font-size: 5vw;
+        font-size: 3vw;
     }
     .card-holder{
         margin-left: 30px;
@@ -806,24 +834,25 @@ color: gray;
     .vl {
         height: 1px;
         width: 75vw;
+        background-color: gray;
         border: 1px solid gray;
         margin-bottom: 30px;
     }
     .piece h2{
         width: 70vw;
-        font-size: 7.5vw;
+        font-size: 5vw;
         margin-bottom: 15px;
     }
     .piece h3{
         width: 70vw;
         color: gray;
-        font-size: 6vw;
+        font-size: 3vw;
         margin-bottom: 20px;
     }
     .piece img{
         margin-bottom: 30px;
-        width: 37vw;
-        height: 23vh;
+        width: 40vw;
+        height: 20vh;
     }
     .card-holder-p{
         margin-left: 10px;
@@ -833,8 +862,9 @@ color: gray;
     }
     .vl-p{
         margin-right: 2px;
+        margin-bottom: 10px;
         border-left: 2px solid gray;
-        height: 4vh;
+        height: 2vh;
     }
     .piece-p{
         width: 28vw;
@@ -844,30 +874,35 @@ color: gray;
     }
     .piece-p h2{
         width: 23vw;
-        font-size: 4.45vw;
+        font-size: 4vw;
+    }
+    #active-co{
+        width: 10vw;
     }
     .piece-p h3{
         width: 32vw;
         font-size: 3vw;
     }
     .product-div{
-        margin-left: 10px;
-        width: 42vh;
+        margin-left: 0px;
+        width: 50vh;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         overflow-x: auto;
     }
     .p-details{
-        width: 80vw;
+        width: 75vw;
         max-height: 58vh;
         overflow-x: hidden;
-        margin-left: 5px;
+        margin-left: 0px;
         margin-bottom: 30px;
         border-radius: 12px;
         background-color: rgb(209, 209, 209);
     }
     .p-details div img{
-        width: 36vh;
-        height:35vh;
+        width: 32vh;
+        height:32vh;
     }
 
     .product{
@@ -879,6 +914,7 @@ color: gray;
     
     .specialist{
         align-items: center;
+        justify-content: flex-start;
         width: 100vw;
         height: 200vh;
     }
@@ -886,11 +922,11 @@ color: gray;
     .p-details h1{
         margin-top: 12px;
         margin-left: 20px;
-        font-size: 7vw;
+        font-size: 4.3vw;
     }
     .p-details h5{
         margin-left: 20px;
-        font-size: 6vw;
+        font-size: 4vw;
     }
     .shop{
         width: 13vw;
@@ -907,9 +943,10 @@ color: gray;
     .container-wrapper{
        flex-direction: column;
        justify-content: flex-start;
+       margin-top: 0px;
     }
     .coffee-img{
-        margin-left: 40px;
+        margin-left: 0px;
         width: 75vw;
         height: 50vh;
     }
@@ -919,13 +956,13 @@ color: gray;
     }
     #img-float{
         width: 30vw;
-        height: 20vh;
+        height: 19vh;
         top: 25%;
-        left: 43%;
+        left: 38%;
     }
     .detail-wrapper{
         width: 80vw;
-        margin-left: 0px;
+        margin-left: 50px;
         margin-top: 20px;
         height: 70vh;
         display: flex;
@@ -934,12 +971,12 @@ color: gray;
         justify-content: flex-start;
     }
     .detail-wrapper h1{
-        font-size: 7vw;
+        font-size: 6vw;
         margin-bottom: 24px;
     }
     
     .detail-wrapper h3{
-        font-size: 6vw;
+        font-size: 5vw;
         margin-bottom: 10px;
     }
     #price{
@@ -975,8 +1012,8 @@ color: gray;
         flex-direction: column;
     }
     .link img{
-        width: 50vw;
-        height: 38vh;
+        width: 65vw;
+        height: 36vh;
         margin: 20px;
         filter: grayscale(100%);
     }
@@ -986,13 +1023,16 @@ color: gray;
     }
     .blog-holder{
         flex-direction: column;
-        margin-left: 10px;
-        margin-top: 20px;
+        margin-left: 0px;
+        margin-top: 30px;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
     }
     .blog-card{
         margin-left: 5px;
         width: 85vw;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
     .blog-img{
        
@@ -1010,13 +1050,13 @@ color: gray;
         flex-direction: column;
     }
     .content h1{
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
     .content p{
         margin-top: 20px;
         width: 70vw;
         color: gray;
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
     .comment{
         cursor: pointer;
@@ -1025,6 +1065,7 @@ color: gray;
     }
     .comment p{
         display: flex;
+        font-size: 3vw;
         justify-content: flex-start;
         color: gray;
         align-items: center;
@@ -1038,5 +1079,132 @@ color: gray;
         margin-right: 10px;
         margin-left: 20px;
     }
+    #blog-arrow{
+        font-size: 7vw;
+    }
+    .footer{
+        display: none;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(34, 34, 34);
+    }
+    #lofo-f{
+        color: white;
+        font-size: 6vw;
+        margin-left: 40px;
+        margin-top: 65px;
+    }
+    #container-box{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 40px;
+        width: 80vw;
+        justify-content: space-between;
+    }
+    #contact{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact p{
+        color: gray;
+        font-size: 3vw;
+    }
+    #box{
+        margin-top: 6px;
+        display: flex;
+    }
     
+    #box input{
+        width: 60vw;
+        margin-right: 5px;
+        border-radius: 4px;
+        background-color: white;
+        padding-left: 10px;
+        border: none;
+        outline: none;
+        font-size: 3vw;
+        height: 7vh;
+    }
+    #box button{
+        background-color: rgb(255, 153, 0);
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border-radius: 4px;
+        width: 12vw;
+        height: 7vh;
+    }
+    .info-c{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .info-c h1{
+        margin-top: 30px;
+        color: white;
+        font-size: 4vw;
+        margin-bottom: 6px;
+    }
+    .info-c p{
+        color: gray;
+        font-size: 3vw;
+    }
+    .line{
+        margin-top: 70px;
+        width: 80vw;
+        margin-left: 20px;
+        background-color: gray;
+        height: 2px;
+    
+    }
+    .bottom-wrapper{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-left: 90px;
+    }
+    #copyrigh{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        
+    }
+    #copyright p{
+        color: gray;
+        font-size: 3vw;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .s-icon{
+        display: flex;
+        width: 65vw;
+    }
+    .s-icon a{
+        color: white;
+        margin: 0px 40px 0px 0px;
+        text-decoration: none;
+        font-size: 6vw;
+    }
+    #s-arrow{
+        font-size: 7vw;
+    }
+    .top{
+        width: 12vw;
+        height: 6vh;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        background-color: rgb(221, 221, 221);
+        cursor: pointer;
+        top: 92%;
+        left: 86%;
+    }
+    
+    .top i{
+        font-size: 6vw;
+    }
 }

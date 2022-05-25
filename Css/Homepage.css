@@ -696,18 +696,25 @@ color: gray;
         width: 100vw;
         overflow-x: hidden;
     }
+    .nav-bar{
+       margin-bottom: 20px;
+    }
     .main{
         flex-direction: column;
     }
     .left-background{
         width: 100vw;
+        height: 120vh;
+    }
+    .left-background h1{
+        margin-top: 10px;
     }
     .logo h3{
-        font-size: 10vw;
+        font-size: 7vw;
     }
     .logo img{
-        width: 7.5vw;
-        height: 4.2vh;
+        width: 5vw;
+        height: 3vh;
     }
     .menu li{
         display: none;
@@ -764,10 +771,10 @@ color: gray;
     .textfield h1{
         margin-left: 0px;
         font-size: 8vw;
-        width: 85vw;
+        width: 80vw;
     }
     #tdd{
-        margin-top: 42px;
+        margin-top: 55px;
         margin-left: 0px;
     }
     .textfield span{
@@ -820,14 +827,14 @@ color: gray;
     }
     .card-holder-p{
         margin-left: 10px;
-        margin-top: 60px;
+        margin-top:120px;
         align-items: center;
         display: flex;
     }
     .vl-p{
         margin-right: 2px;
         border-left: 2px solid gray;
-        height: 6vh;
+        height: 4vh;
     }
     .piece-p{
         width: 28vw;
@@ -837,11 +844,11 @@ color: gray;
     }
     .piece-p h2{
         width: 23vw;
-        font-size: 5vw;
+        font-size: 4.45vw;
     }
     .piece-p h3{
         width: 32vw;
-        font-size: 4vw;
+        font-size: 3vw;
     }
     .product-div{
         margin-left: 10px;
@@ -873,7 +880,7 @@ color: gray;
     .specialist{
         align-items: center;
         width: 100vw;
-        height: 190vh;
+        height: 200vh;
     }
 
     .p-details h1{
@@ -897,4 +904,139 @@ color: gray;
     .shop i{
         font-size: 8vw;
     }
+    .container-wrapper{
+       flex-direction: column;
+       justify-content: flex-start;
+    }
+    .coffee-img{
+        margin-left: 40px;
+        width: 75vw;
+        height: 50vh;
+    }
+    .premium{
+        height: 180vh;
+        align-items: flex-start;
+    }
+    #img-float{
+        width: 30vw;
+        height: 20vh;
+        top: 25%;
+        left: 43%;
+    }
+    .detail-wrapper{
+        width: 80vw;
+        margin-left: 0px;
+        margin-top: 20px;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .detail-wrapper h1{
+        font-size: 7vw;
+        margin-bottom: 24px;
+    }
+    
+    .detail-wrapper h3{
+        font-size: 6vw;
+        margin-bottom: 10px;
+    }
+    #price{
+        font-size: 3vw;
+        color: gray;
+        margin-bottom: 20px;
+    }
+    #discription{
+    font-size:3vw;
+    color: gray;
+    }
+    .button-container{
+        margin-top: 60px;
+        flex-direction: column;
+    }
+    #buy{
+        width: 40vw;
+        height: 6.5vh;
+        font-size: 3vw;
+    }
+    #see{
+        width: 40vw;
+        height: 6.5vh;
+        font-size: 3vw;
+    }
+    #arrow{
+        font-size: 5vw;
+        margin-left: 16px;
+        
+    }
+    .link{
+        height: 200vh;
+        flex-direction: column;
+    }
+    .link img{
+        width: 50vw;
+        height: 38vh;
+        margin: 20px;
+        filter: grayscale(100%);
+    }
+    .blog{
+        width: 100vw;
+        height: 200vh;
+    }
+    .blog-holder{
+        flex-direction: column;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .blog-card{
+        margin-left: 5px;
+        width: 85vw;
+        margin-bottom: 30px;
+    }
+    .blog-img{
+       
+        border-radius: 10px;
+        width: 85vw;
+        height: 35vh;
+    }
+    .blog-img button{
+        width: 20vw;
+        height: 6vh;
+    }
+    .content{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .content h1{
+        font-size: 4.5vw;
+    }
+    .content p{
+        margin-top: 20px;
+        width: 70vw;
+        color: gray;
+        font-size: 3.5vw;
+    }
+    .comment{
+        cursor: pointer;
+        display: flex;
+        margin-top: 20px;
+    }
+    .comment p{
+        display: flex;
+        justify-content: flex-start;
+        color: gray;
+        align-items: center;
+    }
+    #clogo{
+        margin-right: 10px;
+        font-size: 3vw;
+    }
+    #clogos{
+        font-size: 3vw;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+    
 }
